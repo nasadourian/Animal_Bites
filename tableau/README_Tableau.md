@@ -10,15 +10,10 @@
 * [Contact](#contact)
 
 ## About
-
-As an aspiring data scientist, I wanted to learn more about the industry-standards for data analysis techniques. I have prior experience using JavaScript and Excel/Sheets; however, companies heavily rely on programs such as Python, R, and Tableau to complete their analyses and dashboards. 
-
-I created the same plots using multiple programs to broaden my skill set and understand the difference between the two. I created this using Tableau Desktop 2024.1 
-
-You can view the final version of my [Data Dashboard](https://public.tableau.com/views/animalBites/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) here. 
+ I created this using Tableau Desktop 2024.1. You can view the final version of my [Data Dashboard](https://public.tableau.com/views/animalBites/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) here. 
 
 ### Motivation
-When I went to [Kaggle](https://www.kaggle.com/) to look for a beginning dataset to use, I wanted to start with a topic that I was passionate about. I've always been interested in the unique traits found in different dog breeds. I found a dataset about reported animal bites which allowed me to look into some of the more negative traits found in animals.
+Tableau and PowerBI are the two main programs used for Data Visualization and I wanted to teach myself one of these options. Tableau was the more familiar option, so I began learning through tutorials to produce this dashboard. 
 
 ### I Learned How To:
 
@@ -48,7 +43,7 @@ I would like to summarize and highlight a few key points from this dataset and d
 
 * **Breed:** Pitbull, German Shepard, and Labrador Retrievers are the 3 dog breeds with the most reported total bites, location of bite does not matter. Pitbulls have 2.25x more reported bites compared to any other breed. 
 
-* **Coat Color:** As far as coat colors go, the most bites have been done by animals with Black, Brown, White, Gray and Tan coats, respectively. Animals with a black coat make up more than 25% of animal bites, and Black and Brown together make up nearly 50% of total bites. 
+* **Coat Color:** As far as coat colors go, the most bites have been done by animals with Black, Brown, White, Gray and Tan coats, respectively. Animals with a black coat alone account for 30% of animal bites, but black and brown coat dogs comprise 50% of recorded animal bites. 
 
 ## Dataset
 Dataset was provided by [Kaggle](https://www.kaggle.com/datasets/rtatman/animal-bites/data). 
