@@ -11,18 +11,18 @@
 
 ## About
 
-I created this project to learn some introductory topics about data science and data visualization. I created this using Tableau Desktop 2024.1 and I wanted to re-create the same visualization using multiple programs to help draw the connections between the two. 
+As an aspiring data scientist, I wanted to learn more about the industry-standards for data analysis techniques. I have prior experience using JavaScript and Excel/Sheets; however, companies heavily rely on programs such as Python, R, and Tableau to complete their analyses and dashboards. 
+
+I created the same plots using multiple programs to broaden my skill set and understand the difference between the two. I created this using Tableau Desktop 2024.1 
 
 You can view the final version of my [Data Dashboard](https://public.tableau.com/views/animalBites/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) here. 
 
 ### Motivation
-As an aspiring data scientist, I wanted to learn more about the industry-standards for data analysis techniques. I have prior experience using JavaScript and Excel/Sheets; however, companies heavily rely on programs such as Python, R, and Tableau to complete their analyses and dashboards. 
+When I went to [Kaggle](https://www.kaggle.com/) to look for a beginning dataset to use, I wanted to start with a topic that I was passionate about. I've always been interested in the unique traits found in different dog breeds. I found a dataset about reported animal bites which allowed me to look into some of the more negative traits found in animals.
 
-When I went to [Kaggle](https://www.kaggle.com/) to look for a beginning dataset to use, I wanted to start with a topic that I was passionate about. I've always been interested in different dog breed and their respective unique traits. I found a dataset about reported animal bites which allowed me to look into some of the more negative traits found in animals.
+### I Learned How To:
 
-### What I Learned
-
-* Design an aesthetically-pleasing interactive dashboard and publish it online,
+* Design an aesthetically-pleasing dashboard and publish it online,
 
 * Connect to different data sources such as Excel and Google Sheets,
 
@@ -36,10 +36,9 @@ When I went to [Kaggle](https://www.kaggle.com/) to look for a beginning dataset
 
 ## Dashboard
 
-![This is a screenshot of my Tableau Dashboard](Dashboard.png "Austin Animal Center Analysis")
+![This is a screenshot of my Tableau Dashboard](Dashboard.png "Reported Animal Bites Analysis")
 
 ### Analysis Summary
-
 
 I would like to summarize and highlight a few key points from this dataset and data analysis:
 
