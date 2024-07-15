@@ -1,0 +1,1724 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='animalBites' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Health_AnimalBites' inline='true' name='federated.1ue0qsk1w4pkv211x9tuw06kgvwk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='animalBites' name='excel-direct.1d96ydw09fe4uo1bter0x1chihjo'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/chich/Documents/Datasets/Animal_Bites/animalBites.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1d96ydw09fe4uo1bter0x1chihjo' name='animalBites' table='[animalBites$]' type='table'>
+          <columns gridOrigin='A1:P9004:no:A1:P9004:0' header='yes' outcome='2'>
+            <column datatype='date' name='bite_date' ordinal='0' />
+            <column datatype='string' name='SpeciesIDDesc' ordinal='1' />
+            <column datatype='string' name='BreedIDDesc' ordinal='2' />
+            <column datatype='string' name='GenderIDDesc' ordinal='3' />
+            <column datatype='string' name='main_color' ordinal='4' />
+            <column datatype='string' name='color' ordinal='5' />
+            <column datatype='integer' name='vaccination_yrs' ordinal='6' />
+            <column datatype='date' name='vaccination_date' ordinal='7' />
+            <column datatype='string' name='victim_zip' ordinal='8' />
+            <column datatype='string' name='AdvIssuedYNDesc' ordinal='9' />
+            <column datatype='string' name='WhereBittenIDDesc' ordinal='10' />
+            <column datatype='date' name='quarantine_date' ordinal='11' />
+            <column datatype='string' name='DispositionIDDesc' ordinal='12' />
+            <column datatype='date' name='head_sent_date' ordinal='13' />
+            <column datatype='date' name='release_date' ordinal='14' />
+            <column datatype='string' name='ResultsIDDesc' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1d96ydw09fe4uo1bter0x1chihjo' name='animalBites' table='[animalBites$]' type='table'>
+          <columns gridOrigin='A1:P9004:no:A1:P9004:0' header='yes' outcome='2'>
+            <column datatype='date' name='bite_date' ordinal='0' />
+            <column datatype='string' name='SpeciesIDDesc' ordinal='1' />
+            <column datatype='string' name='BreedIDDesc' ordinal='2' />
+            <column datatype='string' name='GenderIDDesc' ordinal='3' />
+            <column datatype='string' name='main_color' ordinal='4' />
+            <column datatype='string' name='color' ordinal='5' />
+            <column datatype='integer' name='vaccination_yrs' ordinal='6' />
+            <column datatype='date' name='vaccination_date' ordinal='7' />
+            <column datatype='string' name='victim_zip' ordinal='8' />
+            <column datatype='string' name='AdvIssuedYNDesc' ordinal='9' />
+            <column datatype='string' name='WhereBittenIDDesc' ordinal='10' />
+            <column datatype='date' name='quarantine_date' ordinal='11' />
+            <column datatype='string' name='DispositionIDDesc' ordinal='12' />
+            <column datatype='date' name='head_sent_date' ordinal='13' />
+            <column datatype='date' name='release_date' ordinal='14' />
+            <column datatype='string' name='ResultsIDDesc' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-refresh-mode='' incremental-updates='' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P9004:no:A1:P9004:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bite_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[bite_date]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>bite_date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SpeciesIDDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SpeciesIDDesc]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>SpeciesIDDesc</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BreedIDDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BreedIDDesc]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>BreedIDDesc</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GenderIDDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GenderIDDesc]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>GenderIDDesc</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>main_color</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[main_color]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>main_color</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>color</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[color]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>color</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vaccination_yrs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vaccination_yrs]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>vaccination_yrs</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vaccination_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[vaccination_date]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>vaccination_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>victim_zip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[victim_zip]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>victim_zip</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AdvIssuedYNDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AdvIssuedYNDesc]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>AdvIssuedYNDesc</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WhereBittenIDDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WhereBittenIDDesc]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>WhereBittenIDDesc</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quarantine_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[quarantine_date]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>quarantine_date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DispositionIDDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DispositionIDDesc]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>DispositionIDDesc</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>head_sent_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[head_sent_date]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>head_sent_date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[release_date]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>release_date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ResultsIDDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ResultsIDDesc]</local-name>
+            <parent-name>[animalBites]</parent-name>
+            <remote-alias>ResultsIDDesc</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Adv Issued YN Desc' datatype='string' name='[AdvIssuedYNDesc]' role='dimension' type='nominal' />
+      <column caption='Breed ID Desc' datatype='string' name='[BreedIDDesc]' role='dimension' type='nominal' />
+      <column caption='Head or Body' datatype='integer' name='[Calculation_1461981069153464320]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='if[WhereBittenIDDesc] == &quot;HEAD&quot; THEN 1 ELSEIF [WhereBittenIDDesc] == &quot;BODY&quot; THEN 2 ELSE 0 END' />
+      </column>
+      <column caption='Percentage' datatype='real' datatype-customized='true' name='[Calculation_1461981069162336261]' role='measure' type='quantitative' visual-totals='Avg'>
+        <calculation class='tableau' formula='COUNT([Percentage of Head (copy)_1461981069156253698])/count([WhereBittenIDDesc])*100' />
+      </column>
+      <column caption='Count of Body' datatype='integer' name='[Count of Head (copy)_1461981069161050116]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Calculation_1461981069153464320] = 2 THEN [WhereBittenIDDesc] END)' />
+      </column>
+      <column caption='Disposition ID Desc' datatype='string' name='[DispositionIDDesc]' role='dimension' type='nominal' />
+      <column caption='Gender ID Desc' datatype='string' name='[GenderIDDesc]' role='dimension' type='nominal' />
+      <column caption='Count of Head' datatype='integer' name='[Percentage of Head (copy)_1461981069156253698]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Calculation_1461981069153464320] = 1 THEN [WhereBittenIDDesc] END)' />
+      </column>
+      <column caption='Results ID Desc' datatype='string' name='[ResultsIDDesc]' role='dimension' type='nominal' />
+      <column caption='Species ID Desc' datatype='string' name='[SpeciesIDDesc]' role='dimension' type='nominal' />
+      <column caption='Where Bitten ID Desc' datatype='string' name='[WhereBittenIDDesc]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='animalBites' datatype='table' name='[__tableau_internal_object_id__].[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]' role='measure' type='quantitative' />
+      <column caption='Bite Date' datatype='date' name='[bite_date]' role='dimension' type='ordinal' />
+      <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+      <column caption='Head Sent Date' datatype='date' name='[head_sent_date]' role='dimension' type='ordinal' />
+      <column caption='Main Color' datatype='string' name='[main_color]' role='dimension' type='nominal' />
+      <column caption='Quarantine Date' datatype='date' name='[quarantine_date]' role='dimension' type='ordinal' />
+      <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+      <column caption='Vaccination Date' datatype='date' name='[vaccination_date]' role='dimension' type='ordinal' />
+      <column caption='Vaccination Yrs' datatype='integer' name='[vaccination_yrs]' role='measure' type='quantitative' />
+      <column caption='Victim Zip' datatype='string' name='[victim_zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column-instance column='[BreedIDDesc]' derivation='None' name='[none:BreedIDDesc:nk]' pivot='key' type='nominal' />
+      <column-instance column='[SpeciesIDDesc]' derivation='None' name='[none:SpeciesIDDesc:nk]' pivot='key' type='nominal' />
+      <column-instance column='[WhereBittenIDDesc]' derivation='None' name='[none:WhereBittenIDDesc:nk]' pivot='key' type='nominal' />
+      <column-instance column='[main_color]' derivation='None' name='[none:main_color:nk]' pivot='key' type='nominal' />
+      <column-instance column='[bite_date]' derivation='Year' name='[yr:bite_date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Breed ID Desc,Where Bitten ID Desc)' hidden='true' name='[Action (Breed ID Desc,Where Bitten ID Desc)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[BreedIDDesc]' />
+          <groupfilter function='level-members' level='[WhereBittenIDDesc]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Color Predominate)' hidden='true' name='[Action (Color Predominate)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Color Predominate]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Species ID Desc,YEAR(Bite Date))' hidden='true' name='[Action (Species ID Desc,YEAR(Bite Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[SpeciesIDDesc]' />
+          <groupfilter function='level-members' level='[yr:bite_date:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Breed ID Desc,Where Bitten ID Desc)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:BreedIDDesc:nk]' />
+          <groupfilter function='level-members' level='[none:WhereBittenIDDesc:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/chich/Documents/My Tableau Repository/Datasources/Health_AnimalBites.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>bite_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[bite_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bite_date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>animalBites</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2401</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SpeciesIDDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SpeciesIDDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SpeciesIDDesc</remote-alias>
+              <ordinal>1</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BreedIDDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BreedIDDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BreedIDDesc</remote-alias>
+              <ordinal>2</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GenderIDDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GenderIDDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GenderIDDesc</remote-alias>
+              <ordinal>3</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>main_color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[main_color]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>main_color</remote-alias>
+              <ordinal>4</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[color]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>color</remote-alias>
+              <ordinal>5</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>426</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vaccination_yrs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vaccination_yrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vaccination_yrs</remote-alias>
+              <ordinal>6</ordinal>
+              <family>animalBites</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vaccination_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[vaccination_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vaccination_date</remote-alias>
+              <ordinal>7</ordinal>
+              <family>animalBites</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1554</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>victim_zip</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[victim_zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>victim_zip</remote-alias>
+              <ordinal>8</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>133</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AdvIssuedYNDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AdvIssuedYNDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AdvIssuedYNDesc</remote-alias>
+              <ordinal>9</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WhereBittenIDDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WhereBittenIDDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WhereBittenIDDesc</remote-alias>
+              <ordinal>10</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quarantine_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[quarantine_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quarantine_date</remote-alias>
+              <ordinal>11</ordinal>
+              <family>animalBites</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>493</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DispositionIDDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DispositionIDDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DispositionIDDesc</remote-alias>
+              <ordinal>12</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>head_sent_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[head_sent_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>head_sent_date</remote-alias>
+              <ordinal>13</ordinal>
+              <family>animalBites</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>476</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[release_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_date</remote-alias>
+              <ordinal>14</ordinal>
+              <family>animalBites</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>586</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ResultsIDDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ResultsIDDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ResultsIDDesc</remote-alias>
+              <ordinal>15</ordinal>
+              <family>animalBites</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:main_color:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CALICO&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BEIGE&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;TABBY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BLUE&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;WHITE&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;GOLDEN&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;CHOCOLATE&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BRINDLE&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;YELLOW&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SEAL POINT&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BLACK&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;TAN&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;ORANGE&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BROWN&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;GRAY&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MULTI&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;RED&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SILVER&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CREAM&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BUFF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BLOND&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;TORTIE&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MULTICOLOR&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;FAWN&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BLONDE&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;TRICOLOR&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:SpeciesIDDesc:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;BAT&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;RACCOON&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;SKUNK&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;FERRET&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DOG&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;HORSE&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CAT&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;RABBIT&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:WhereBittenIDDesc:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;BODY&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;HEAD&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='bite_date' />
+        <field-sort-custom-order field='SpeciesIDDesc' />
+        <field-sort-custom-order field='BreedIDDesc' />
+        <field-sort-custom-order field='GenderIDDesc' />
+        <field-sort-custom-order field='color' />
+        <field-sort-custom-order field='Calculation_707065142698225664' />
+        <field-sort-custom-order field='vaccination_yrs' />
+        <field-sort-custom-order field='vaccination_date' />
+        <field-sort-custom-order field='victim_zip' />
+        <field-sort-custom-order field='AdvIssuedYNDesc' />
+        <field-sort-custom-order field='WhereBittenIDDesc' />
+        <field-sort-custom-order field='quarantine_date' />
+        <field-sort-custom-order field='DispositionIDDesc' />
+        <field-sort-custom-order field='head_sent_date' />
+        <field-sort-custom-order field='release_date' />
+        <field-sort-custom-order field='ResultsIDDesc' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='animalBites' id='animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E'>
+            <properties context=''>
+              <relation connection='excel-direct.1d96ydw09fe4uo1bter0x1chihjo' name='animalBites' table='[animalBites$]' type='table'>
+                <columns gridOrigin='A1:P9004:no:A1:P9004:0' header='yes' outcome='2'>
+                  <column datatype='date' name='bite_date' ordinal='0' />
+                  <column datatype='string' name='SpeciesIDDesc' ordinal='1' />
+                  <column datatype='string' name='BreedIDDesc' ordinal='2' />
+                  <column datatype='string' name='GenderIDDesc' ordinal='3' />
+                  <column datatype='string' name='main_color' ordinal='4' />
+                  <column datatype='string' name='color' ordinal='5' />
+                  <column datatype='integer' name='vaccination_yrs' ordinal='6' />
+                  <column datatype='date' name='vaccination_date' ordinal='7' />
+                  <column datatype='string' name='victim_zip' ordinal='8' />
+                  <column datatype='string' name='AdvIssuedYNDesc' ordinal='9' />
+                  <column datatype='string' name='WhereBittenIDDesc' ordinal='10' />
+                  <column datatype='date' name='quarantine_date' ordinal='11' />
+                  <column datatype='string' name='DispositionIDDesc' ordinal='12' />
+                  <column datatype='date' name='head_sent_date' ordinal='13' />
+                  <column datatype='date' name='release_date' ordinal='14' />
+                  <column datatype='string' name='ResultsIDDesc' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_F9A14F4F69FA405A80BE948E826915B5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Dog Bites by Breeds' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated)' name='[Action3_630AD15A1DBB4E2B8F57B6D93A98F147]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Color Predominate,Species ID Desc' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action4_096F84A7A3864178A9056AAFEC9B64C2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Time Series of Bites by Species' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action4_6B4024BE3D1243AF83C18B9C30334931]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Dog Bites by Coat Color' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Count of Bites by Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health_AnimalBites' name='federated.1ue0qsk1w4pkv211x9tuw06kgvwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ue0qsk1w4pkv211x9tuw06kgvwk'>
+            <column caption='Breed ID Desc' datatype='string' name='[BreedIDDesc]' role='dimension' type='nominal' />
+            <column caption='Species ID Desc' datatype='string' name='[SpeciesIDDesc]' role='dimension' type='nominal' />
+            <column caption='Where Bitten ID Desc' datatype='string' name='[WhereBittenIDDesc]' role='dimension' type='nominal' />
+            <column caption='Bite Date' datatype='date' name='[bite_date]' role='dimension' type='ordinal' />
+            <column-instance column='[bite_date]' derivation='Count' name='[cnt:bite_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SpeciesIDDesc]' derivation='None' name='[none:SpeciesIDDesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[bite_date]' derivation='Year-Trunc' name='[tyr:bite_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[bite_date]' derivation='Year' name='[yr:bite_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Breed ID Desc,Where Bitten ID Desc)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_F9A14F4F69FA405A80BE948E826915B5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[BreedIDDesc]' />
+              <groupfilter function='level-members' level='[WhereBittenIDDesc]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:SpeciesIDDesc:nk]' />
+              <groupfilter function='except'>
+                <groupfilter function='level-members' level='[none:SpeciesIDDesc:nk]' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:SpeciesIDDesc:nk]' member='&quot;BAT&quot;' />
+                  <groupfilter function='member' level='[none:SpeciesIDDesc:nk]' member='&quot;CAT&quot;' />
+                  <groupfilter function='member' level='[none:SpeciesIDDesc:nk]' member='&quot;DOG&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[tyr:bite_date:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[tyr:bite_date:ok]' />
+              <groupfilter function='member' level='[tyr:bite_date:ok]' member='#2018-01-01 00:00:00#' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[yr:bite_date:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2013' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2014' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2015' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2016' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2017' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2018' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[yr:bite_date:ok]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[tyr:bite_date:ok]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Breed ID Desc,Where Bitten ID Desc)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#e9ebe0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[cnt:bite_date:qk]</rows>
+        <cols>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[yr:bite_date:ok]</cols>
+      </table>
+      <simple-id uuid='{3EA51BC0-15E6-4576-8544-44F1792F4247}' />
+    </worksheet>
+    <worksheet name='Dog Bites by Breeds'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health_AnimalBites' name='federated.1ue0qsk1w4pkv211x9tuw06kgvwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ue0qsk1w4pkv211x9tuw06kgvwk'>
+            <column caption='Breed ID Desc' datatype='string' name='[BreedIDDesc]' role='dimension' type='nominal' />
+            <column caption='Species ID Desc' datatype='string' name='[SpeciesIDDesc]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='animalBites' datatype='integer' name='[__tableau_internal_object_id__].[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]' role='measure' type='quantitative' />
+            <column caption='Where Bitten ID Desc' datatype='string' name='[WhereBittenIDDesc]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='animalBites' datatype='table' name='[__tableau_internal_object_id__].[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E:qk]' pivot='key' type='quantitative' />
+            <column caption='Bite Date' datatype='date' name='[bite_date]' role='dimension' type='ordinal' />
+            <column-instance column='[BreedIDDesc]' derivation='None' name='[none:BreedIDDesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WhereBittenIDDesc]' derivation='None' name='[none:WhereBittenIDDesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[bite_date]' derivation='Year' name='[yr:bite_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Species ID Desc,YEAR(Bite Date))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_096F84A7A3864178A9056AAFEC9B64C2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[SpeciesIDDesc]' />
+              <groupfilter function='level-members' level='[yr:bite_date:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Exclusions (Breed ID Desc,Where Bitten ID Desc)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:BreedIDDesc:nk]' />
+                <groupfilter function='level-members' level='[none:WhereBittenIDDesc:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:BreedIDDesc:nk]' member='%null%' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:WhereBittenIDDesc:nk]' member='%null%' />
+                  <groupfilter function='member' level='[none:WhereBittenIDDesc:nk]' member='&quot;BODY&quot;' />
+                  <groupfilter function='member' level='[none:WhereBittenIDDesc:nk]' member='&quot;HEAD&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:BreedIDDesc:nk]'>
+            <groupfilter function='level-members' level='[none:BreedIDDesc:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:WhereBittenIDDesc:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:WhereBittenIDDesc:nk]' member='&quot;BODY&quot;' />
+              <groupfilter function='member' level='[none:WhereBittenIDDesc:nk]' member='&quot;HEAD&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:BreedIDDesc:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[__tableau_internal_object_id__].[cnt:animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:WhereBittenIDDesc:nk]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Species ID Desc,YEAR(Bite Date))]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:BreedIDDesc:nk]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Exclusions (Breed ID Desc,Where Bitten ID Desc)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#dfedeb' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#dfedeb' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#dfedeb' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:WhereBittenIDDesc:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4282872676849365' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[__tableau_internal_object_id__].[cnt:animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E:qk]</rows>
+        <cols>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:BreedIDDesc:nk]</cols>
+      </table>
+      <simple-id uuid='{F107B8C5-DED3-40E4-8A9C-B7A64F73E201}' />
+    </worksheet>
+    <worksheet name='Dog Bites by Coat Color'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health_AnimalBites' name='federated.1ue0qsk1w4pkv211x9tuw06kgvwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ue0qsk1w4pkv211x9tuw06kgvwk'>
+            <column caption='Breed ID Desc' datatype='string' name='[BreedIDDesc]' role='dimension' type='nominal' />
+            <column caption='Species ID Desc' datatype='string' name='[SpeciesIDDesc]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='animalBites' datatype='integer' name='[__tableau_internal_object_id__].[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]' role='measure' type='quantitative' />
+            <column caption='Where Bitten ID Desc' datatype='string' name='[WhereBittenIDDesc]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='animalBites' datatype='table' name='[__tableau_internal_object_id__].[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E:qk]' pivot='key' type='quantitative' />
+            <column caption='Bite Date' datatype='date' name='[bite_date]' role='dimension' type='ordinal' />
+            <column caption='Main Color' datatype='string' name='[main_color]' role='dimension' type='nominal' />
+            <column-instance column='[main_color]' derivation='None' name='[none:main_color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[bite_date]' derivation='Year' name='[yr:bite_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Breed ID Desc,Where Bitten ID Desc)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_F9A14F4F69FA405A80BE948E826915B5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[BreedIDDesc]' />
+              <groupfilter function='level-members' level='[WhereBittenIDDesc]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Species ID Desc,YEAR(Bite Date))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_096F84A7A3864178A9056AAFEC9B64C2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[SpeciesIDDesc]' />
+              <groupfilter function='level-members' level='[yr:bite_date:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:main_color:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:main_color:nk]' />
+              <groupfilter function='member' level='[none:main_color:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Breed ID Desc,Where Bitten ID Desc)]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:main_color:nk]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Species ID Desc,YEAR(Bite Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='432' />
+            <format attr='cell-h' value='432' />
+            <format attr='cell' value='54' />
+            <format attr='cell-q' value='270' />
+            <format attr='height' value='431' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#f5f5dd' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-color' value='#76b7b2' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#f5f5dd' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='8' />
+            <format attr='background-color' value='#f5f5dd' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:main_color:nk]' />
+              <wedge-size column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[__tableau_internal_object_id__].[cnt:animalBites_CA9E2C08914B4CECA92AF0E3992B9F0E:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3953038454055786' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C09ED10F-07D1-4476-BEE6-95E282BFC575}' />
+    </worksheet>
+    <worksheet name='Time Series of Bites by Species'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health_AnimalBites' name='federated.1ue0qsk1w4pkv211x9tuw06kgvwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ue0qsk1w4pkv211x9tuw06kgvwk'>
+            <column caption='Breed ID Desc' datatype='string' name='[BreedIDDesc]' role='dimension' type='nominal' />
+            <column caption='Species ID Desc' datatype='string' name='[SpeciesIDDesc]' role='dimension' type='nominal' />
+            <column caption='Where Bitten ID Desc' datatype='string' name='[WhereBittenIDDesc]' role='dimension' type='nominal' />
+            <column caption='Bite Date' datatype='date' name='[bite_date]' role='dimension' type='ordinal' />
+            <column-instance column='[bite_date]' derivation='Count' name='[cnt:bite_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SpeciesIDDesc]' derivation='None' name='[none:SpeciesIDDesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[bite_date]' derivation='Year-Trunc' name='[tyr:bite_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[bite_date]' derivation='Year' name='[yr:bite_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Breed ID Desc,Where Bitten ID Desc)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_F9A14F4F69FA405A80BE948E826915B5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[BreedIDDesc]' />
+              <groupfilter function='level-members' level='[WhereBittenIDDesc]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:SpeciesIDDesc:nk]' />
+              <groupfilter function='except'>
+                <groupfilter function='level-members' level='[none:SpeciesIDDesc:nk]' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:SpeciesIDDesc:nk]' member='&quot;BAT&quot;' />
+                  <groupfilter function='member' level='[none:SpeciesIDDesc:nk]' member='&quot;CAT&quot;' />
+                  <groupfilter function='member' level='[none:SpeciesIDDesc:nk]' member='&quot;DOG&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[tyr:bite_date:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[tyr:bite_date:ok]' />
+              <groupfilter function='member' level='[tyr:bite_date:ok]' member='#2018-01-01 00:00:00#' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[yr:bite_date:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2013' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2014' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2015' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2016' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2017' />
+              <groupfilter function='member' level='[yr:bite_date:ok]' member='2018' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[yr:bite_date:ok]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[tyr:bite_date:ok]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Breed ID Desc,Where Bitten ID Desc)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' value='Species ID'>
+              <formatted-text>
+                <run fontsize='11'>Species ID</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+        </panes>
+        <rows>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[cnt:bite_date:qk]</rows>
+        <cols>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[yr:bite_date:ok]</cols>
+      </table>
+      <simple-id uuid='{889CDDDE-4C54-4F32-A633-237525CB6763}' />
+    </worksheet>
+    <worksheet name='Total Animal Bites by Species'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health_AnimalBites' name='federated.1ue0qsk1w4pkv211x9tuw06kgvwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ue0qsk1w4pkv211x9tuw06kgvwk'>
+            <column caption='Breed ID Desc' datatype='string' name='[BreedIDDesc]' role='dimension' type='nominal' />
+            <column caption='Species ID Desc' datatype='string' name='[SpeciesIDDesc]' role='dimension' type='nominal' />
+            <column caption='Where Bitten ID Desc' datatype='string' name='[WhereBittenIDDesc]' role='dimension' type='nominal' />
+            <column caption='Bite Date' datatype='date' name='[bite_date]' role='dimension' type='ordinal' />
+            <column-instance column='[SpeciesIDDesc]' derivation='Count' name='[cnt:SpeciesIDDesc:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SpeciesIDDesc]' derivation='None' name='[none:SpeciesIDDesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[bite_date]' derivation='Year' name='[yr:bite_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Breed ID Desc,Where Bitten ID Desc)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_F9A14F4F69FA405A80BE948E826915B5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[BreedIDDesc]' />
+              <groupfilter function='level-members' level='[WhereBittenIDDesc]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Species ID Desc,YEAR(Bite Date))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_096F84A7A3864178A9056AAFEC9B64C2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[SpeciesIDDesc]' />
+              <groupfilter function='level-members' level='[yr:bite_date:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]'>
+            <groupfilter function='level-members' level='[none:SpeciesIDDesc:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' direction='DESC' using='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[cnt:SpeciesIDDesc:qk]' />
+          <slices>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Breed ID Desc,Where Bitten ID Desc)]</column>
+            <column>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[Action (Species ID Desc,YEAR(Bite Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[cnt:SpeciesIDDesc:qk]' value='60' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[cnt:SpeciesIDDesc:qk]' value='#e9ebe0' />
+            <format attr='background-color' field='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' value='#e8edda' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#f9e9e0' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#f9e9e0' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='cols' value='#f9e9e0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' value='Species ID'>
+              <formatted-text>
+                <run>Species ID</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[cnt:SpeciesIDDesc:qk]</rows>
+        <cols>[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]</cols>
+      </table>
+      <simple-id uuid='{219B7AFF-2603-4703-BEE2-9E158CDAF6A8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Health_AnimalBites' name='federated.1ue0qsk1w4pkv211x9tuw06kgvwk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ue0qsk1w4pkv211x9tuw06kgvwk'>
+        <column caption='Breed ID Desc' datatype='string' name='[BreedIDDesc]' role='dimension' type='nominal' />
+        <column-instance column='[BreedIDDesc]' derivation='None' name='[none:BreedIDDesc:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='41' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='22' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='19' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='98000' id='17' type-v2='layout-basic' w='98400' x='800' y='1000'>
+                  <zone h='39619' id='6' name='Dog Bites by Breeds' w='55000' x='44200' y='7250'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#e6ecf0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6375' id='7' mode='checkdropdown' name='Dog Bites by Breeds' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:BreedIDDesc:nk]' type-v2='filter' w='55000' x='44200' y='46869'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='6250' id='12' type-v2='text' w='98400' x='800' y='1000'>
+                    <formatted-text>
+                      <run fontalignment='1' fontcolor='#287eb7' fontsize='24'>Reported Animal Bites near Louisville, Kentucky (1985- 2017)</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45756' id='16' name='Total Animal Bites by Species' w='45300' x='53900' y='53244'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45756' id='25' name='Time Series of Bites by Species' w='43400' x='800' y='53244'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45756' id='35' name='Total Animal Bites by Species' pane-specification-id='0' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' type-v2='color' w='9700' x='44200' y='53244'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#f5eddc' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45994' id='39' name='Dog Bites by Coat Color' w='34700' x='800' y='7250'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45994' id='42' name='Dog Bites by Coat Color' pane-specification-id='0' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:main_color:nk]' type-v2='color' w='8700' x='35500' y='7250'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='76' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='6250' id='12' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#287eb7' fontsize='24'>Reported Animal Bites near Louisville, Kentucky (1985- 2017)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45994' id='39' is-fixed='true' name='Dog Bites by Coat Color' w='34700' x='800' y='7250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='45994' id='42' name='Dog Bites by Coat Color' pane-specification-id='0' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:main_color:nk]' type-v2='color' w='8700' x='35500' y='7250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6375' id='7' mode='checkdropdown' name='Dog Bites by Breeds' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:BreedIDDesc:nk]' type-v2='filter' w='55000' x='44200' y='46869'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39619' id='6' is-fixed='true' name='Dog Bites by Breeds' w='55000' x='44200' y='7250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6ecf0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45756' id='25' is-fixed='true' name='Time Series of Bites by Species' w='43400' x='800' y='53244'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45756' id='16' is-fixed='true' name='Total Animal Bites by Species' w='45300' x='53900' y='53244'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='45756' id='35' name='Total Animal Bites by Species' pane-specification-id='0' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' type-v2='color' w='9700' x='44200' y='53244'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5eddc' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{24EA42D6-D83A-4040-AA1D-7A73670D4799}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Animal Bites by Species'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2CDF6E96-B9A0-43C7-9931-53A2DDC5A99C}' />
+    </window>
+    <window class='worksheet' name='Count of Bites by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D88772D7-79FC-4DD5-B6F9-C6B19F4B31C7}' />
+    </window>
+    <window class='worksheet' name='Time Series of Bites by Species'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:SpeciesIDDesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{48A81502-D1FB-4FE3-9F76-A0DBBC5E5C0D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Dog Bites by Coat Color'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:main_color:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C1B4EF72-4875-4A7F-BD1A-D2C8C13FD222}' />
+    </window>
+    <window class='worksheet' name='Dog Bites by Breeds'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1ue0qsk1w4pkv211x9tuw06kgvwk].[none:WhereBittenIDDesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{040B9FF1-9586-405C-BAA0-55E5FC43AD30}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Dog Bites by Breeds'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Dog Bites by Coat Color'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Time Series of Bites by Species'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+          <default-map-tool-selection tool='16' />
+        </viewpoint>
+        <viewpoint name='Total Animal Bites by Species'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='39' />
+      <simple-id uuid='{631576C4-8E91-468A-8FC0-B3785557AC43}' />
+    </window>
+  </windows>
+</workbook>
