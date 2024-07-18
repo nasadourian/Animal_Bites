@@ -2,14 +2,14 @@ import argparse
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def dogSpecies(dataframe):
+def animalSpecies(dataframe):
     
-    species_bites = dogSpeciesDataframe(dataframe, False)
+    species_bites = animalSpeciesDataframe(dataframe, False)
     # plots the chart
     species_bites.plot.bar(title="Animal Bites by Species")
     plt.show()
 
-def dogSpeciesDataframe(dataframe, printFrame):
+def animalSpeciesDataframe(dataframe, printFrame):
 
     #stores specific data regarding Species and their respective counts
     bite_count = dataframe["SpeciesIDDesc"].value_counts()
@@ -149,7 +149,11 @@ def main():
                     help="filters dates for time series -- plot only")
     # added "-" short and long version so it's optional
     args = parser.parse_args()
-  
+
+    if (args.filter != None):
+        startDate = args.filter[0]
+        endDate = args.filter[1]  
+    
     if args.plotName == "dog_breeds":
         if args.data:
             dogBreedDataframe(data, args.data)
@@ -158,9 +162,9 @@ def main():
 
     elif args.plotName == "animal_types":
         if args.data:
-            dogSpeciesDataframe(data, args.data)
+            animalSpeciesDataframe(data, args.data)
         else:
-            dogSpecies(data)
+            animalSpecies(data)
 
     elif args.plotName == "coat_colors":
         if args.data:
@@ -170,9 +174,7 @@ def main():
 
     elif args.plotName == "time_series":
         if args.data:
-            if (args.filter != None):
-                startDate = args.filter[0]
-                endDate = args.filter[1]  
+            if (args.filter != None): 
                 print("You have entered a year filter from", str(startDate), "to", str(endDate), end=".\n")
                 print("The database will not take this filter into account.", end="\n""\n")
             timeSeriesDataframe(data, args.data)
