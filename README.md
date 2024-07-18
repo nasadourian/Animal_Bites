@@ -44,15 +44,15 @@ Python 3.12.4
 
 ## Screenshots
 
-[![This is a screenshot of my Tableau Dashboard](tableau\Dashboard.png "Reported Animal Bites Analysis")](https://public.tableau.com/views/animalBites/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[![This is a screenshot of my Tableau Dashboard](tableau/Dashboard.png "Reported Animal Bites Analysis")](https://public.tableau.com/views/animalBites/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![This is a screenshot of Specifically Dog Bites by Breed](python\Figure_1.png "Reported Animal Bites Analysis")
+![This is a screenshot of Specifically Dog Bites by Breed](python/Figure_1.png "Reported Animal Bites Analysis")
 
-![This is a screenshot of Animal Bites by Species](python\Figure_2.png "Reported Animal Bites Analysis")
+![This is a screenshot of Animal Bites by Species](python/Figure_2.png "Reported Animal Bites Analysis")
 
-![This is a screenshot of Animal Bites by Coat Color](python\Figure_3.png "Reported Animal Bites Analysis")
+![This is a screenshot of Animal Bites by Coat Color](python/Figure_3.png "Reported Animal Bites Analysis")
 
-![This is a screenshot of Animal Bites by Year](python\Figure_4.png "Reported Animal Bites Analysis")
+![This is a screenshot of Animal Bites by Year](python/Figure_4.png "Reported Animal Bites Analysis")
 
 ## Dataset
 Dataset was provided by [Kaggle](https://www.kaggle.com/datasets/rtatman/animal-bites/data). 
