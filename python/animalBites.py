@@ -6,7 +6,7 @@ def dogSpecies(dataframe):
     
     species_bites = dogSpeciesDataframe(dataframe, False)
     # plots the chart
-    species_bites.plot.bar()
+    species_bites.plot.bar(title="Animal Bites by Species")
     plt.show()
 
 def dogSpeciesDataframe(dataframe, printFrame):
@@ -65,7 +65,7 @@ def dogBreed(dataframe):
     all_bites = dogBreedDataframe(dataframe, False)
     
     #plots only Body and Head Bites by breed sorted by Total Bites
-    all_bites[["BODY", "HEAD"]].head(20).plot.bar(stacked=True)
+    all_bites[["BODY", "HEAD"]].head(20).plot.bar(stacked=True, title="Dog Bites by Breed and Location")
     plt.show()
 
 def dogBreedDataframe(dataframe, printFrame):
@@ -99,7 +99,7 @@ def timeSeries(dataframe, start, end):
     timely.set_index("years", inplace=True)  
     
     # Organizes data using group by to sort bite location counts by breed
-    timely.plot()
+    timely.plot(title="Time Series by Species")
     plt.show()
 
 def timeSeriesDataframe(dataframe, printFrame):
@@ -125,6 +125,8 @@ def timeSeriesDataframe(dataframe, printFrame):
     return timeline
 
 def main():
+    startDate = 1985
+    endDate = 2021
 
     data = pd.read_csv("animalBites.csv", header=0, parse_dates=True)
     pd.set_option("display.max_rows", len(data))
@@ -132,14 +134,14 @@ def main():
     parser = argparse.ArgumentParser(
                     description='''Please select which analysis you would like to view. 
                     There are 4 options:
-                    1. Animal Bites per Species 
-                    2. Animal Bites by Primary Coat Color 
-                    3. Dog Bites per Dog Breed 
+                    1. Dog Bites per Dog Breed
+                    2. Animal Bites per Species 
+                    3. Animal Bites by Primary Coat Color 
                     4. Animal Bites Time Series by Year''')
     # no - so required argument
     parser.add_argument("plotName", 
                         help="provide name of plot to display",
-                        choices=["animal_types", "coat_colors", "dog_breeds", "time_series"])
+                        choices=["dog_breeds", "animal_types", "coat_colors", "time_series"])
     parser.add_argument("-d", "--data", 
                         action="store_true",
                         help="show the dataframe used for the analysis")
@@ -147,8 +149,14 @@ def main():
                     help="filters dates for time series -- plot only")
     # added "-" short and long version so it's optional
     args = parser.parse_args()
-    
-    if args.plotName == "animal_types":
+  
+    if args.plotName == "dog_breeds":
+        if args.data:
+            dogBreedDataframe(data, args.data)
+        else:
+            dogBreed(data)
+
+    elif args.plotName == "animal_types":
         if args.data:
             dogSpeciesDataframe(data, args.data)
         else:
@@ -159,19 +167,15 @@ def main():
             coatColorDataframe(data, args.data)
         else:
             coatColor(data)
-        
-    elif args.plotName == "dog_breeds":
-        if args.data:
-            dogBreedDataframe(data, args.data)
-        else:
-            dogBreed(data)
 
     elif args.plotName == "time_series":
         if args.data:
-            if (args.filter != []):
-                print("You have entered a filter of", str(args.filter[0]), "and", str(args.filter[1]), end=".\n")
+            if (args.filter != None):
+                startDate = args.filter[0]
+                endDate = args.filter[1]  
+                print("You have entered a year filter from", str(startDate), "to", str(endDate), end=".\n")
                 print("The database will not take this filter into account.", end="\n""\n")
             timeSeriesDataframe(data, args.data)
         else:
-            timeSeries(data, args.filter[0], args.filter[1])
+            timeSeries(data, startDate, endDate)
 main()
