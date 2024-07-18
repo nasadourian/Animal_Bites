@@ -146,7 +146,7 @@ def main():
                         action="store_true",
                         help="show the dataframe used for the analysis")
     parser.add_argument("-f", "--filter", action="store", nargs=2, type=int,
-                    help="filters dates for time series -- plot only")
+                    help="filters dates by year for time series -- plot only")
     # added "-" short and long version so it's optional
     args = parser.parse_args()
 

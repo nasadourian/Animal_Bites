@@ -5,8 +5,8 @@
     * [Motivation](#motivation)
     * [What I Learned](#what-i-learned) 
 * [Setup](#setup)
-    * [Prerequisites](#prerequisites)
     * [Installation](#installation)
+    * [Usage](#usage)
 * [Screenshots](#screenshots)
     * [Analysis Summary](#analysis-summary)
 * [Dataset](#dataset)
@@ -51,7 +51,8 @@ Initially, this project started  in Tableau, but upon finishing my Dashboard, I 
 ### Usage
 --- 
 
-Begin by importing the used libraries for the project. Argparse is used purely for the delivery of the charts.  
+Begin by importing the used libraries for the project. Argparse is used purely for the delivery of the charts. 
+
 ``` python
 import argparse
 import pandas as pd
@@ -59,10 +60,11 @@ import matplotlib.pyplot as plt
 ```
 
 Running the program will require you to enter a chart type that you would like to view: 
-1. *animal_types* for viewing the Species Analysis,
-2. *coat_colors* for viewing the Animal Coat Color Categorization,
-3. *dog_breeds* for dog breed analysis, and lastly
-4. *time_series* for a Time Series per animal type.
+1. *animal_types* for species categorization,
+2. *coat_colors* for the animal coat color categorization,
+3. *dog_breeds* for dog breed and location analysis, and lastly
+4. *time_series* for a time series per animal type.
+
 ``` python
 usage: animalBites.py [-h] [-d] [-f FILTER FILTER] {animal_types,coat_colors,dog_breeds,time_series}
 
@@ -77,7 +79,7 @@ options:
   -h, --help            show this help message and exit
   -d, --data            show the dataframe used for the analysis
   -f FILTER FILTER, --filter FILTER FILTER
-                        filters dates for time series -- plot only
+                        filters dates by year for time series -- plot only
 ```
 
 from here, you can display either the plotted chart or the used dataframe of a given analysis by providing -d. This additonal led to creating two different functions per analysis: one for plotting and one for data manipulation. 
@@ -85,35 +87,35 @@ from here, you can display either the plotted chart or the used dataframe of a g
 if --data was True, only the Dataframe function associated with that analysis would run. 
 
 ```python
-    if args.plotName == "animal_types":
+   if args.plotName == "dog_breeds":
         if args.data:
-            dogSpeciesDataframe(dataframe, args.data)
+            dogBreedDataframe(data, args.data)
         else:
-            dogSpecies(dataframe)
+            dogBreed(data)
 ```
 
 If --data was false, we would return the cleaned dataframe to the plotting function 
+
 ``` python
     if printFrame:
         print(df)
     return df
 ```
 
-
 Because the data range for the time series plot is clustered post-2010, I created an optional parameter for filtering the years in that particular analysis, giving a starting year and an ending year. This filter only filters the data to be plotted and does not filter the dataframe. 
 
 ``` python
-    elif args.plotName == "time_series":
+     elif args.plotName == "time_series":
         if args.data:
-            if (args.filter != []):
-                print("You have entered a filter of", str(args.filter[0]), "and", str(args.filter[1]), end=".\n")
+            if (args.filter != None):
+                startDate = args.filter[0]
+                endDate = args.filter[1]  
+                print("You have entered a year filter from", str(startDate), "to", str(endDate), end=".\n")
                 print("The database will not take this filter into account.", end="\n""\n")
             timeSeriesDataframe(data, args.data)
         else:
-            timeSeries(data, args.filter[0], args.filter[1])
+            timeSeries(data, startDate, endDate)
 ```
-
-
 ## Screenshots
 
 ![This is a screenshot of my Dog Bites by Breed](Figure_1.png "Reported Animal Bites Analysis")
