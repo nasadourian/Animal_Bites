@@ -89,9 +89,15 @@ def dogBreedDataframe(dataframe, printFrame):
         print(df)
     return df
 
-def timeSeries(dataframe):
+def timeSeries(dataframe, start, end):
     timely = timeSeriesDataframe(dataframe, False)
 
+    # filter the years wanted for Time Series 
+    timely.reset_index(inplace=True)
+    filt = (timely["years"] >= start) & (timely["years"] <= end)
+    timely = timely.loc[filt]
+    timely.set_index("years", inplace=True)  
+    
     # Organizes data using group by to sort bite location counts by breed
     timely.plot()
     plt.show()
@@ -137,6 +143,8 @@ def main():
     parser.add_argument("-d", "--data", 
                         action="store_true",
                         help="show the dataframe used for the analysis")
+    parser.add_argument("-f", "--filter", action="store", nargs=2, type=int,
+                    help="filters dates for time series -- plot only")
     # added "-" short and long version so it's optional
     args = parser.parse_args()
     
@@ -160,7 +168,10 @@ def main():
 
     elif args.plotName == "time_series":
         if args.data:
+            if (args.filter != []):
+                print("You have entered a filter of", str(args.filter[0]), "and", str(args.filter[1]), end=".\n")
+                print("The database will not take this filter into account.", end="\n""\n")
             timeSeriesDataframe(data, args.data)
         else:
-            timeSeries(data)
+            timeSeries(data, args.filter[0], args.filter[1])
 main()
